@@ -49,7 +49,7 @@ header a {
     margin: 4px 0;
 }
 
-@media screen and (max-width: 554px) {
+@media screen and (max-width: 894px) {
     .links ul {
         display: none; 
         flex-direction: column; 
