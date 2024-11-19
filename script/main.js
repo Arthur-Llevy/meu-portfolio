@@ -28,6 +28,7 @@ botaoProximo.addEventListener('click', () => {
 });
 
 const buscarRepositorios = async () => {
+  await buscarTemperatura()
   try {
     const resposta = await fetch('https://api.github.com/users/Arthur-Llevy/repos', {
       headers: {
@@ -81,5 +82,18 @@ const buscarRepositorios = async () => {
     console.error('Erro ao buscar repositórios:', error);
   }
 };
+
+const buscarTemperatura = async () => {
+  const resposta = await fetch('https://api.openweathermap.org/data/2.5/weather?lat=-8.0584933&lon=-34.8848193&appid=158447d2aca67825055f12600b9e2815&lang=pt_br', {
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+
+  const respostaJson = await resposta.json();
+  document.getElementById('temperatura').innerText = respostaJson.main.temp - 273;
+  console.log(respostaJson)
+}
+
 
 window.onload = buscarRepositorios;
