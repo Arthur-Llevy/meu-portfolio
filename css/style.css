@@ -50,10 +50,15 @@ header a {
 }
 
 @media screen and (max-width: 894px) {
+    .links.active {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .links ul {
         display: none; 
         flex-direction: column; 
-        position: absolute; 
         top: 60px; 
         left: 0;
         background-color: #171717; 
@@ -68,6 +73,7 @@ header a {
     .menu-hamburger {
         display: flex; 
     }
+
 }
 
 
@@ -338,9 +344,8 @@ button {
 .links {
     display: flex;
     gap: 20px;
+    height: auto;
 }
-
-
 
 .menu-hamburger {
     display: none;
@@ -369,15 +374,15 @@ header {
 
 @media screen and (max-width: 896px) {
     .links ul {
-        display: none;
+        display: none; 
     }
     .links.active ul {
-        display: flex;
+        display: flex; 
     }
     .menu-hamburger {
-        display: flex;
+        display: flex; 
     }
-    }
+}
 
 .container-stack div {
     flex-wrap: wrap;
