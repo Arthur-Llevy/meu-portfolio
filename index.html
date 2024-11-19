@@ -12,6 +12,7 @@
         <span>Arthur Levy</span>
         <div class="links">
             <ul>
+                <li><a href="#container-principal">Sobre</a></li>
                 <li><a href="#container-formacao-academica">Formação</a></li>
                 <li><a href="#container-projetos">Projetos</a></li>
                 <li><a href="#container-stack">Stack</a></li>
@@ -28,8 +29,13 @@
         </div>
     </header>
     <main>
-        <div class="container-principal">
-            <h1>Olá, seja bem-vindo(a)!</h1>
+        <div class="container-principal" id="container-principal">
+            <div class="apresentacao">
+                <img src="./imagens/foto_perfil.svg" alt="">
+                <p>Me chamo Arthur Levy, gosto bastante de tecnologia, principalmente programação Web. Desde cedo gosto da área de T.I. e sigo estudando, buscando me aprimorar cada vez mais.</p>
+            </div>
+            <button onclick="buscarFraseAleatoria()">Gerar frase aleatória</button>
+            <p id="frase"></p>
             <a href="#container-formacao-academica"><img src="./imagens/bottom-arrow.svg"></a>
         </div>
         <div class="container-formacao-academica" id="container-formacao-academica">
@@ -95,6 +101,7 @@
                 </div>
             </div>
         </div>
+        <button onclick="buscarFraseAleatoria()">Gerar frase aleatória</button>
     </main>
 </body>
 </html>

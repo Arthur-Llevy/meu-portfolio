@@ -26,6 +26,27 @@ header a {
     color: #fff;
 }
 
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    color: #fff;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+#frase {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+.apresentacao img {
+    width: 290px !important;
+    border-radius: 100%;
+}
+
 .subtitulo {
     font-size: 48px;
     text-align: center;

@@ -28,12 +28,10 @@ botaoProximo.addEventListener('click', () => {
 });
 
 const buscarRepositorios = async () => {
-
   try {
     const resposta = await fetch('https://api.github.com/users/Arthur-Llevy/repos', {
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer  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'
       },
     });
 
@@ -43,7 +41,6 @@ const buscarRepositorios = async () => {
       const linguagensUsadas = await fetch(repositorio.languages_url, {
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer  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'
         },
       });
 
@@ -83,18 +80,15 @@ const buscarRepositorios = async () => {
   }
 };
 
-const buscarTemperatura = async () => {
-  const resposta = await fetch('https://api.openweathermap.org/data/2.5/weather?lat=-8.0584933&lon=-34.8848193&appid=158447d2aca67825055f12600b9e2815&lang=pt_br', {
-    headers: {
-      'Content-Type': 'application/json'
-    }
+const buscarFraseAleatoria = async () => {
+  const resposta = await fetch('https://api.adviceslip.com/advice', {
   });
 
   const respostaJson = await resposta.json();
-  document.getElementById('temperatura').innerText = respostaJson.main.temp - 273;
+  document.getElementById('frase').innerText = respostaJson.slip.advice;;
   console.log(respostaJson)
 }
 
-buscarTemperatura()
+
 
 window.onload = buscarRepositorios;
