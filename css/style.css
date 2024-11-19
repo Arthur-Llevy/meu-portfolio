@@ -139,6 +139,16 @@ header a {
     font-weight: bold;
 }
   
+.carrossel-container .card span {
+    font-size: 20px;
+  text-align: center;
+}
+
+.carrossel-container .card p {
+    text-align: center;
+}
+
+
 .botao-navegacao {
     position: absolute;
     top: 50%;

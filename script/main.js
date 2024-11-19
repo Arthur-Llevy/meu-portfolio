@@ -32,7 +32,7 @@ const buscarRepositorios = async () => {
     const resposta = await fetch('https://api.github.com/users/Arthur-Llevy/repos', {
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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'
+        'Authorization': 'Bearer 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'
       },
     });
 
@@ -42,11 +42,17 @@ const buscarRepositorios = async () => {
       const linguagensUsadas = await fetch(repositorio.languages_url, {
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer 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'
+          'Authorization': 'Bearer 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'
         },
       });
 
       const linguagensUsadasJson = await linguagensUsadas.json();
+      let span = document.createElement('span');
+     
+      for (let chave in linguagensUsadasJson) {
+        span.innerText += " \n " + chave;
+      }
+
       const titulo = document.createElement('p');
       titulo.innerText = repositorio.name;
 
@@ -58,11 +64,12 @@ const buscarRepositorios = async () => {
       githubImagem.setAttribute('src', './imagens/black-github.svg');
 
       link.appendChild(githubImagem);
-
+      
       const card = document.createElement('div');
       card.setAttribute('class', 'card');
-
+      
       card.appendChild(titulo);
+      card.appendChild(span)
       card.appendChild(link);
 
       carousel.appendChild(card);
