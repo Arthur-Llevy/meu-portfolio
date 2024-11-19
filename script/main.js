@@ -28,7 +28,7 @@ botaoProximo.addEventListener('click', () => {
 });
 
 const buscarRepositorios = async () => {
-  await buscarTemperatura()
+
   try {
     const resposta = await fetch('https://api.github.com/users/Arthur-Llevy/repos', {
       headers: {
@@ -95,5 +95,6 @@ const buscarTemperatura = async () => {
   console.log(respostaJson)
 }
 
+buscarTemperatura()
 
 window.onload = buscarRepositorios;
