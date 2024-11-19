@@ -26,6 +26,11 @@ header a {
     color: #fff;
 }
 
+.subtitulo {
+    font-size: 48px;
+    text-align: center;
+}
+
 .links ul, .imagens ul {
     display: flex;
     justify-content: space-between;
@@ -200,4 +205,40 @@ header a {
 
 .container-stack img {
     width: 90px;
- }
+}
+
+
+.container-contato {
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.container-contato a {
+    color: #171717;
+}
+
+.contato-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contato-card {
+    border: 1px #171717 solid;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contato-card a {
+    text-decoration: none;
+}
