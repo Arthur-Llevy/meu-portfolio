@@ -92,3 +92,25 @@ const buscarFraseAleatoria = async () => {
 
 
 window.onload = buscarRepositorios;
+
+document.getElementById('menuHamburger').addEventListener('click', function() {
+  const links = document.querySelector('.links');
+  links.classList.toggle('active');
+});
+
+const linkElements = document.querySelectorAll('.links a');
+linkElements.forEach(link => {
+  link.addEventListener('click', function() {
+      const linksContainer = document.querySelector('.links');
+      linksContainer.classList.remove('active');
+  });
+});
+
+document.addEventListener('click', function(event) {
+  const menuHamburger = document.getElementById('menuHamburger');
+  const linksContainer = document.querySelector('.links');
+
+  if (!menuHamburger.contains(event.target) && !linksContainer.contains(event.target)) {
+      linksContainer.classList.remove('active');
+  }
+});

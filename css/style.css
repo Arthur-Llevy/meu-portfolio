@@ -34,6 +34,43 @@ header a {
     color: #fff;
 }
 
+
+
+.menu-hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-hamburger .bar {
+    height: 3px;
+    width: 30px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+@media screen and (max-width: 554px) {
+    .links ul {
+        display: none; 
+        flex-direction: column; 
+        position: absolute; 
+        top: 60px; 
+        left: 0;
+        background-color: #171717; 
+        width: 100%; 
+        z-index: 1; 
+    }
+
+    .links.active ul {
+        display: flex; 
+    }
+
+    .menu-hamburger {
+        display: flex; 
+    }
+}
+
+
 .apresentacao {
     display: flex;
     align-items: center;
@@ -133,6 +170,8 @@ header a {
 .cards {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .container-projetos {
@@ -217,14 +256,15 @@ header a {
 
 
 .container-stack {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     width: 100vw;
     background: #fff;
     display: flex;
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    gap: 10%;
+    gap: 120px;
 }
 
 .container-stack h2 { 
@@ -293,4 +333,58 @@ button {
 
 .seta-voltar {
     transform: rotate(180deg);
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.menu-hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-hamburger .bar {
+    height: 3px;
+    width: 30px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 896px) {
+    .links ul {
+        display: none;
+    }
+    .links.active ul {
+        display: flex;
+    }
+    .menu-hamburger {
+        display: flex;
+    }
+    }
+
+.container-stack div {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-stack div img {
+    width: 70px;
 }
