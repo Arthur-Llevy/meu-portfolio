@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Bellota", system-ui;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -15,9 +16,9 @@ header {
     width: 100%;
     color: #fff;
     font-weight: bold;
-    font-size: 18px;
     border-bottom: 1px solid;
     font-size: 22px;
+    background: #171717;
 }
 
 header a {
@@ -50,7 +51,48 @@ header a {
     color: #fff;
 }
 
+.container-principal a {
+    text-align: center;
+}
+
 .container-principal img {
     width: 45px;
     margin: 0 auto;
+}
+
+.container-formacao-academica {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 20%;
+}
+
+.container-formacao-academica img {
+    width: 45px;
+    margin: 0 auto;
+}
+
+.container-formacao-academica h2 { 
+    text-align: center;
+    font-size: 48px;
+}
+
+.card {
+    border: 1px solid;
+    width: 420px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 4px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
 }
