@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bellota", system-ui;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid;
+    font-size: 22px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.links ul, .imagens ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.container-principal {
+    height: 100vh;
+    width: 100vw;
+    background: #171717;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20%;
+}
+
+.container-principal h1 {
+    text-align: center;
+    font-size: 96px;
+    color: #fff;
+}
+
+.container-principal img {
+    width: 45px;
+    margin: 0 auto;
+}
