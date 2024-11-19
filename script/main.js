@@ -32,6 +32,7 @@ const buscarRepositorios = async () => {
     const resposta = await fetch('https://api.github.com/users/Arthur-Llevy/repos', {
       headers: {
         'Content-Type': 'application/json',
+        'Authorization': 'Bearer  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'
       },
     });
 
@@ -41,6 +42,7 @@ const buscarRepositorios = async () => {
       const linguagensUsadas = await fetch(repositorio.languages_url, {
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': 'Bearer  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'
         },
       });
 
