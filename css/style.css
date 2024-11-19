@@ -96,3 +96,70 @@ header a {
     display: flex;
     justify-content: space-around;
 }
+
+.container-projetos {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 20%;
+}
+
+.container-projetos h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.carrossel-container {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+  
+.carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.carrossel-container .card {
+    flex: 0 0 calc(100% / 3);
+    margin: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+  
+.botao-navegacao {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+}
+  
+.botao-navegacao:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+.botao-anterior {
+    left: 10px;
+}
+  
+.botao-proximo {
+    right: 10px;
+}
