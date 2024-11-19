@@ -68,7 +68,7 @@ header a {
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20%;
+    gap: 10%;
 }
 
 .container-principal h1 {
@@ -84,6 +84,10 @@ header a {
 .container-principal img {
     width: 45px;
     margin: 0 auto;
+}
+
+.container-principal p {
+    font-size: 24px;
 }
 
 .container-formacao-academica {
@@ -131,6 +135,8 @@ header a {
     align-content: center;
     justify-content: center;
     gap: 20%;
+    background-color: #171717;
+    color: #fff;
 }
 
 .container-projetos h2 {
@@ -163,6 +169,7 @@ header a {
     align-items: center;
     font-size: 2rem;
     font-weight: bold;
+    color: #171717;
 }
   
 .carrossel-container .card span {
@@ -204,7 +211,7 @@ header a {
 .container-stack {
     height: 100vh;
     width: 100vw;
-    background: #171717;
+    background: #fff;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -215,7 +222,7 @@ header a {
 .container-stack h2 { 
     text-align: center;
     font-size: 48px;
-    color: #fff;
+    color: #171717;
 }
 
 .container-stack div {
@@ -232,7 +239,7 @@ header a {
 .container-contato {
     height: 100vh;
     width: 100vw;
-    background: #fff;
+    background: #171717;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -240,8 +247,12 @@ header a {
     gap: 10%;
 }
 
+.container-contato h2 {
+    color: #fff;
+}
+
 .container-contato a {
-    color: #171717;
+    color: #fff;
 }
 
 .contato-card-container {
@@ -251,7 +262,7 @@ header a {
 }
 
 .contato-card {
-    border: 1px #171717 solid;
+    border: 1px #fff solid;
     width: 300px;
     border-radius: 4px;
     display: flex;
@@ -262,4 +273,12 @@ header a {
 
 .contato-card a {
     text-decoration: none;
+}
+
+button {
+    width: 280px;
+    margin: 0 auto;
+    display: block;
+    padding: 16px;
+    font-size: 16px;
 }
