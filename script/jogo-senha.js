@@ -80,3 +80,9 @@ function resetarJogo() {
     numeroSecreto = gerarNumeroSecreto();
     mostrarResultado();
 }
+
+let botaoResetar = document.getElementById('botaoResetar');
+
+botaoResetar.addEventListener('click', () => {
+    window.location.reload();
+})

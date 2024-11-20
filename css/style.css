@@ -16,10 +16,11 @@ a img {
     width: 45px !important;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding: 16Qpx;
     position: fixed;
     width: 100%;
     color: #fff;
@@ -72,6 +73,11 @@ header a {
 
     .menu-hamburger {
         display: flex; 
+    }
+
+    .apresentacao {
+        flex-wrap: wrap;
+        text-align: center;
     }
 
 }
@@ -163,7 +169,7 @@ header a {
 
 .card {
     border: 1px solid;
-    width: 420px;
+    max-width: 420px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -171,6 +177,7 @@ header a {
     align-items: center;
     gap: 16px;
     padding: 4px;
+    width: 90%;
 }
 
 .cards {
@@ -204,6 +211,7 @@ header a {
     overflow: hidden;
     margin: 0 auto;
 }
+
   
 .carrossel {
     display: flex;
@@ -237,6 +245,7 @@ header a {
 
 .botao-navegacao {
     position: absolute;
+    width: 10px;
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -257,7 +266,9 @@ header a {
 }
   
 .botao-proximo {
-    right: 10px;
+    right: 455px;
+    top: 242%;
+  
 }
 
 
@@ -381,6 +392,10 @@ header {
     }
     .menu-hamburger {
         display: flex; 
+    }
+    
+    .botao-proximo {
+        right: 64px;
     }
 }
 
