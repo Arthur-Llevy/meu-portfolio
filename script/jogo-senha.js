@@ -1,6 +1,10 @@
 let numeroSecreto = gerarNumeroSecreto();
 let tentativas = [];
 
+const mostrarSenha = () => {
+    alert(`A senha era: ${numeroSecreto}`)
+}
+
 document.getElementById('botaoEnviarNumeros').addEventListener('click', function() {
     const tentativa = document.getElementById('inputNumeros').value;
 

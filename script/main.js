@@ -42,6 +42,7 @@ const buscarRepositorios = async () => {
       const linguagensUsadas = await fetch(repositorio.languages_url, {
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': 'Bearer  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'
         },
       });
 
